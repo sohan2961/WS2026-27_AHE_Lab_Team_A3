@@ -1,0 +1,110 @@
+@inproceedings{vaswani2017,
+ author={Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+ title={Attention Is All You Need},
+ booktitle={Advances in Neural Information Processing Systems}, volume={30}, year={2017}, pages={5998--6008},
+ url={https://mlanthology.org/neurips/2017/vaswani2017neurips-attention/},
+ annote={Foundational source for the attention formula, Transformer design, and parallelism in prefill.}
+}
+@misc{shazeer2019,
+ author={Noam Shazeer}, title={Fast Transformer Decoding: One Write-Head is All You Need},
+ year={2019}, eprint={1911.02150}, archivePrefix={arXiv}, url={https://arxiv.org/abs/1911.02150},
+ annote={Introduces multi-query attention to reduce K/V bandwidth in incremental decoding.}
+}
+@inproceedings{ainslie2023,
+ author={Joshua Ainslie and James Lee-Thorp and Michiel de Jong and Yury Zemlyanskiy and Federico Lebron and Sumit Sanghai},
+ title={{GQA}: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints},
+ booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing}, year={2023}, pages={4895--4901},
+ doi={10.18653/v1/2023.emnlp-main.298},
+ annote={Source for grouped-query attention and the quality-efficiency trade-off between MHA and MQA.}
+}
+@inproceedings{dao2022,
+ author={Tri Dao and Daniel Y. Fu and Stefano Ermon and Atri Rudra and Christopher R{\'e}},
+ title={{FlashAttention}: Fast and Memory-Efficient Exact Attention with {IO}-Awareness},
+ booktitle={Advances in Neural Information Processing Systems}, volume={35}, year={2022},
+ url={https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract-Conference.html},
+ annote={Demonstrates the importance of tiling and reducing HBM transfers during exact attention.}
+}
+@inproceedings{dao2024,
+ author={Tri Dao}, title={{FlashAttention-2}: Faster Attention with Better Parallelism and Work Partitioning},
+ booktitle={International Conference on Learning Representations}, year={2024},
+ url={https://proceedings.iclr.cc/paper_files/paper/2024/hash/98ed250b203d1ac6b24bbcf263e3d4a7-Abstract-Conference.html},
+ annote={Useful GPU baseline and evidence that efficient attention depends on memory scheduling and parallel work partitioning.}
+}
+@inproceedings{kwon2023,
+ author={Woosuk Kwon and Zhuohan Li and Siyuan Zhuang and Ying Sheng and Lianmin Zheng and Cody Hao Yu and Joseph E. Gonzalez and Hao Zhang and Ion Stoica},
+ title={Efficient Memory Management for Large Language Model Serving with {PagedAttention}},
+ booktitle={Proceedings of the 29th ACM Symposium on Operating Systems Principles}, year={2023}, pages={611--626},
+ doi={10.1145/3600006.3613165},
+ annote={KV-cache fragmentation and virtual-memory-inspired allocation in multi-request serving.}
+}
+@article{williams2009,
+ author={Samuel Williams and Andrew Waterman and David A. Patterson},
+ title={Roofline: An Insightful Visual Performance Model for Multicore Architectures},
+ journal={Communications of the ACM}, volume={52}, number={4}, pages={65--76}, year={2009},
+ doi={10.1145/1498765.1498785},
+ annote={Provides the arithmetic intensity and bandwidth ceiling used to motivate the illustrative token-rate bound.}
+}
+@inproceedings{xiao2023,
+ author={Guangxuan Xiao and Ji Lin and Mickael Seznec and Hao Wu and Julien Demouth and Song Han},
+ title={{SmoothQuant}: Accurate and Efficient Post-Training Quantization for Large Language Models},
+ booktitle={Proceedings of the 40th International Conference on Machine Learning}, series={Proceedings of Machine Learning Research}, volume={202}, pages={38087--38099}, year={2023},
+ url={https://proceedings.mlr.press/v202/xiao23c.html},
+ annote={Evidence for W8A8 quantization and redistribution of activation outliers.}
+}
+@inproceedings{lin2024,
+ author={Ji Lin and Jiaming Tang and Haotian Tang and Shang Yang and Wei-Ming Chen and Wei-Chen Wang and Guangxuan Xiao and Xingyu Dang and Chuang Gan and Song Han},
+ title={{AWQ}: Activation-aware Weight Quantization for On-Device {LLM} Compression and Acceleration},
+ booktitle={Proceedings of Machine Learning and Systems}, volume={6}, year={2024},
+ url={https://proceedings.mlsys.org/paper_files/paper/2024/hash/42a452cbafa9dd64e9ba4aa95cc1ef21-Abstract-Conference.html},
+ annote={Supports low-bit weight-only quantization and its accuracy constraints.}
+}
+@inproceedings{li2020,
+ author={Bingbing Li and Santosh Pandey and Haowen Fang and Yanjun Lyv and Ji Li and Jieyang Chen and Mimi Xie and Lipeng Wan and Hang Liu and Caiwen Ding},
+ title={{FTRANS}: Energy-Efficient Acceleration of Transformers Using {FPGA}},
+ booktitle={Proceedings of the ACM/IEEE International Symposium on Low Power Electronics and Design}, year={2020},
+ doi={10.1145/3370748.3406567},
+ annote={Early FPGA Transformer acceleration using block-circulant compression; comparison is not directly representative of modern autoregressive LLM decoding.}
+}
+@inproceedings{zeng2024,
+ author={Shulin Zeng and Jun Liu and Guohao Dai and Xinhao Yang and Tianyu Fu and Hongyi Wang and Wenheng Ma and Hanbo Sun and Shiyao Li and Zixiao Huang and Yadong Dai and Jintao Li and Zehao Wang and Ruoyu Zhang and Kairui Wen and Xuefei Ning and Yu Wang},
+ title={{FlightLLM}: Efficient Large Language Model Inference with a Complete Mapping Flow on {FPGAs}},
+ booktitle={Proceedings of the 2024 ACM/SIGDA International Symposium on Field Programmable Gate Arrays}, year={2024},
+ doi={10.1145/3626202.3637562}, url={https://arxiv.org/abs/2401.03868},
+ annote={U280 LLM inference architecture and reported V100S energy-efficiency comparison; VHK158-to-A100 throughput is a separate result.}
+}
+@article{huang2025,
+ author={Mingqiang Huang and Ao Shen and Kai Li and Haoxiang Peng and Boyu Li and Hao Yu},
+ title={{EdgeLLM}: A Highly Efficient {CPU--FPGA} Heterogeneous Edge Accelerator for Large Language Models},
+ journal={IEEE Transactions on Circuits and Systems I: Regular Papers}, volume={72}, number={7}, pages={3352--3365}, year={2025},
+ doi={10.1109/TCSI.2025.3546256},
+ annote={Peer-reviewed CPU-FPGA mixed-precision system; reports 1.91x throughput and 7.55x energy efficiency relative to specified A100 comparator.}
+}
+@inproceedings{chae2025,
+ author={Seoyoon Chae and Taewook Kang},
+ title={{LLM} on {FPGA}: Squeezing Language Models by Quantization and Multi-Query Attention and Its Efficient Hardware Architecture},
+ booktitle={Proceedings of the International SoC Design Conference (ISOCC)}, year={2025},
+ doi={10.1109/ISOCC66390.2025.11329964},
+ annote={Compact Artix-7 quantized attention/FFN implementation, 8x cache reduction and post-synthesis throughput; not a matched deployed GPU result.}
+}
+@article{blankestijn2026,
+ author={Arjan Blankestijn and Uraz Odyurt and Amirreza Yousefzadeh},
+ title={Recent Developments in Transformer Inference Deployment on {FPGA} Platforms: A Survey},
+ journal={Journal of Systems Architecture}, volume={177}, pages={103841}, year={2026},
+ doi={10.1016/j.sysarc.2026.103841},
+ annote={Recent systematic review of FPGA Transformer inference; emphasizes diverse techniques and problems comparing heterogeneous benchmarks.}
+}
+@manual{amdU280,
+ organization={{Advanced Micro Devices, Inc.}}, title={{Alveo U280 Accelerator Cards Data Sheet (DS963)}}, year={2023},
+ url={https://docs.amd.com/r/en-US/ds963-u280/Alveo-Product-Details},
+ annote={Authoritative card-level HBM2 8GB/460 GB/s and DDR4 32GB/38 GB/s ratings; not achieved LLM application measurements.}
+}
+@manual{amdKV260,
+ organization={{Advanced Micro Devices, Inc.}}, title={{Kria KV260 Vision AI Starter Kit Data Sheet (DS986)}}, year={2025},
+ url={https://docs.amd.com/r/en-US/ds986-kv260-starter-kit/Product-Details},
+ annote={Vendor specification for Kria KV260 DDR4 4 GB and programmable-logic resources, no HBM.}
+}
+@manual{nvidiaA100,
+ organization={{NVIDIA Corporation}}, title={{NVIDIA A100 Tensor Core GPU Data Sheet}}, year={2022},
+ url={https://resources.nvidia.com/en-us-gpu/nvidia-a100-datashee-1},
+ annote={Reference specification for A100 80GB SXM HBM2e bandwidth of 2039 GB/s; TDP is not measured inference power.}
+}

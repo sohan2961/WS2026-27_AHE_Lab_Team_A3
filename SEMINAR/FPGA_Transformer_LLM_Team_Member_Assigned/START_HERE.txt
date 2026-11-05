@@ -1,0 +1,16 @@
+GITHUB TEAM REPOSITORY — START HERE
+===================================
+1. Extract this ZIP on your PC.
+2. Open README.md for the project structure.
+3. Open docs/GETTING_STARTED.md to create a PRIVATE GitHub repository.
+4. Upload extracted files/folders using Git, NOT the ZIP itself.
+5. Invite both teammates in GitHub Settings -> Collaborators.
+6. Turja: Section II — research/turja_section_II_attention/ + drafts/turja_section_II.md.
+7. Mostafizur Rahman: Section III — research/mostafizur_section_III_fpga_hbm/ + drafts/mostafizur_section_III.md.
+8. Deepak: Section IV — research/deepak_section_IV_evaluation/ + drafts/deepak_section_IV.md.
+9. Keep a common source tracker: research/shared/literature_matrix.csv.
+10. Record ideas in ideas/idea_board.md and meetings in meetings/.
+11. Integrate reviewed material into paper/main.tex and verify citations.
+
+Includes previous draft: paper/main.tex, references.bib, draft_v1_reference.pdf.
+Everything is a working draft; verify source accuracy before final submission.

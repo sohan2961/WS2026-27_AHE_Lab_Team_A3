@@ -1,0 +1,29 @@
+name: New idea / improvement
+description: Suggest an analysis, paper figure, or optional experiment
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What is the idea?
+      description: How does it help answer the paper's research question?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting references or feasibility considerations
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Type
+      options:
+        - Literature comparison
+        - Technical figure
+        - Formula / quantitative analysis
+        - Optional experiment
+        - Presentation
+  - type: textarea
+    id: next
+    attributes:
+      label: Minimum next step and person responsible

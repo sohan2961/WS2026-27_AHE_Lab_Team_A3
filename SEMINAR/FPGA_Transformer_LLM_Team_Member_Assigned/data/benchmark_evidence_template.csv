@@ -1,0 +1,4 @@
+Citation_key,Study,Year,LLM_model,Param_count,FPGA_device,FPGA_memory,GPU_baseline,Precision,Batch_size,Prompt_tokens,Generated_tokens,Metric,Reported_value,Unit,Source_page_figure_table,Measurement_type,Power_measurement_boundary,Reviewer,Verification_status,Caveat
+zeng2024,FlightLLM,2024,,,Alveo U280,,V100S,,,,,Energy efficiency ratio,,x,,Published benchmark; settings to verify,,Deepak,To verify,Do not combine separate U280 and VHK158 experiments
+huang2025,EdgeLLM,2025,,,VCU128,,A100,,,,,Energy efficiency ratio,,x,,Published benchmark; settings to verify,,Deepak,To verify,"Verify model, GPU baseline, final version and power boundary"
+chae2025,Chae and Kang,2025,,,Artix-7,,,,,,,Tokens/s,,tokens/s,,Post-synthesis claim,,Mostafizur Rahman,To verify,Not a matched general LLM vs GPU measurement

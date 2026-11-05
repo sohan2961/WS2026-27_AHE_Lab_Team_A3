@@ -1,0 +1,33 @@
+name: Research paper / source
+description: Assign an article to read and verify
+labels: [research]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Title and DOI/URL
+      placeholder: "Paper title — https://doi.org/..."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Which section and claim will this source support?
+      placeholder: "Attention / HBM / comparison / limitations"
+    validations:
+      required: true
+  - type: textarea
+    id: facts
+    attributes:
+      label: Facts, reported results, and figure/page numbers to verify
+  - type: dropdown
+    id: owner
+    attributes:
+      label: Suggested member area
+      options:
+        - Turja — Section II / Transformer / KV cache
+        - Mostafizur Rahman — Section III / FPGA / HBM
+        - Deepak — Section IV / Evaluation / GPU
+        - Shared
+    validations:
+      required: true
