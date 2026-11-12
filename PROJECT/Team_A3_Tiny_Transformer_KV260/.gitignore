@@ -1,0 +1,6 @@
+build/
+team_a3_hls_project/
+__pycache__/
+*.log
+*.jou
+*.str

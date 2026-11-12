@@ -1,0 +1,12 @@
+Reference generated: /mnt/data/Team_A3_Tiny_Transformer_KV260/data
+Input: (8, 16), weight floats: 2112, output: (8, 16)
+First output row: [ 0.5573  -0.26261  0.02551 -0.64163 -0.93906  0.67368 -0.26726 -0.21094
+  0.12702  0.92457 -0.16671  0.01489  0.15099  0.22844  0.17501  0.13961]
+Reference model: PASS (finite values and expected shapes)
+PASS Turja: LayerNorm1 | max_abs_error=2.38419e-07 | failed_elements=0/128
+PASS Deepak: QKV/Attention/Softmax/Wo | max_abs_error=3.35276e-08 | failed_elements=0/128
+PASS Turja: LayerNorm2 | max_abs_error=2.38419e-07 | failed_elements=0/128
+PASS Turja: FFN | max_abs_error=8.9407e-08 | failed_elements=0/128
+PASS Mostafizur: top-level transformer | max_abs_error=1.19209e-07 | failed_elements=0/128
+
+ALL SOFTWARE TESTS PASSED
