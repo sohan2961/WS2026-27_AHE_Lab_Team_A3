@@ -1,1 +1,1 @@
-![Tiny Transformer FPGA Architecture Overview](Tiny Transformer FPGA Architecture Overview.png)
+![Tiny Transformer FPGA Architecture Overview](Tiny_Transformer_FPGA_Architecture_Overview.png)
