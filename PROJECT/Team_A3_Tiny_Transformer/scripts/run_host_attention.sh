@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+python3 reference/generate_vectors.py
+mkdir -p build
+g++ -std=c++11 -O2 -Wall -Wextra -Wno-unknown-pragmas \
+    -Ihls hls/attention_top.cpp hls/attention.cpp hls/attention_testbench.cpp \
+    -o build/nexys_attention_test
+./build/nexys_attention_test data

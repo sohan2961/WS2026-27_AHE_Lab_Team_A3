@@ -1,0 +1,34 @@
+# Host compilation and Python caches
+build/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Vitis HLS / Vivado locally generated projects, logs and temporary files
+team_a3_hls_project/
+team_a3_nexys_attention_hls/
+team_a3_nexys_full_hls/
+.Xil/
+*.cache/
+*.runs/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.jou
+*.log
+*.str
+*.wdb
+*.dcp
+*.bit
+*.xsa
+*.hwh
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+~$*
+.vscode/
+.idea/
+
+# Keep source, reference test vectors, docs and the 18-checkpoint Excel tracker in Git.
