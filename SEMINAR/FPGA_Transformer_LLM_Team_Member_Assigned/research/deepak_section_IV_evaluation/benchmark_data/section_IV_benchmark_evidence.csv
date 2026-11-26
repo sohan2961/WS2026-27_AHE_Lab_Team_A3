@@ -1,0 +1,39 @@
+study,platform,model,metric,value,unit,value_type,source_locator,conditions,comparison_limitations
+GLITCHES,A100 GPU,LLaMA2-7B,prefill_latency,175.85,ms,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,A100 GPU,LLaMA2-7B,decode_latency,24.26,ms/token,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,A100 GPU,LLaMA2-7B,decode_power,167.3,W,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,A100 GPU,LLaMA2-7B,decode_energy_per_token,4.0587,J/token,derived: (ms/token)*W/1000,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"Decode only; excludes prefill, transfers and potentially host power"
+GLITCHES,V100S GPU,LLaMA2-7B,prefill_latency,398.8,ms,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,V100S GPU,LLaMA2-7B,decode_latency,29.52,ms/token,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,V100S GPU,LLaMA2-7B,decode_power,222.5,W,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,V100S GPU,LLaMA2-7B,decode_energy_per_token,6.5682,J/token,derived: (ms/token)*W/1000,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"Decode only; excludes prefill, transfers and potentially host power"
+GLITCHES,U280 FPGA,LLaMA2-7B,prefill_latency,5001.2,ms,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,U280 FPGA,LLaMA2-7B,decode_latency,21.5,ms/token,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,U280 FPGA,LLaMA2-7B,decode_power,46.0,W,reported,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"GPU FP16 vs FPGA approx W4A8; reported platform power, not full-server"
+GLITCHES,U280 FPGA,LLaMA2-7B,decode_energy_per_token,0.989,J/token,derived: (ms/token)*W/1000,"GLITCHES [2], Table I (PDF p. 4)",1536 input / 512 generated tokens,"Decode only; excludes prefill, transfers and potentially host power"
+Hummingbird,KV260,LLaMA3-8B,bandwidth,19.2,GB/s,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,KV260,LLaMA3-8B,decode_throughput,4.8,tokens/s,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,KV260,LLaMA3-8B,bandwidth_utilization,94,%,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,KV260,LLaMA3-8B,device_power,3.81,W,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,ZCU104,LLaMA3-8B,bandwidth,34.1,GB/s,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,ZCU104,LLaMA3-8B,decode_throughput,8.6,tokens/s,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,ZCU104,LLaMA3-8B,bandwidth_utilization,93,%,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,ZCU104,LLaMA3-8B,device_power,7.09,W,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,U250,LLaMA3-8B,bandwidth,76.8,GB/s,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,U250,LLaMA3-8B,decode_throughput,19.4,tokens/s,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,U250,LLaMA3-8B,bandwidth_utilization,91,%,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+Hummingbird,U250,LLaMA3-8B,device_power,14.61,W,reported,"Hummingbird [3], Table V (PDF p. 8)",32 prompt / 32 decode benchmark,FPGA devices with different bandwidth and compute; not GPU comparison
+EdgeLLM,A100 GPU,GLM-6B,decode_throughput,45,tokens/s,reported,"EdgeLLM [1], Table V (PDF p. 12)",reported source comparison,Sparse/mixed-precision FPGA; different platform implementation conditions
+EdgeLLM,A100 GPU,GLM-6B,power_efficiency,0.2,tokens/s/W,reported,"EdgeLLM [1], Table V (PDF p. 12)",reported source comparison,Power scope differs from complete server power
+EdgeLLM,VCU128 GLM-6B,GLM-6B,decode_throughput,85.8,tokens/s,reported,"EdgeLLM [1], Table V (PDF p. 12)",reported source comparison,Sparse/mixed-precision FPGA; different platform implementation conditions
+EdgeLLM,VCU128 GLM-6B,GLM-6B,power_efficiency,1.51,tokens/s/W,reported,"EdgeLLM [1], Table V (PDF p. 12)",reported source comparison,Power scope differs from complete server power
+EdgeLLM,VCU128 Qwen-7B,Qwen-7B,decode_throughput,69.4,tokens/s,reported,"EdgeLLM [1], Table V (PDF p. 12)",reported source comparison,Sparse/mixed-precision FPGA; different platform implementation conditions
+EdgeLLM,VCU128 Qwen-7B,Qwen-7B,power_efficiency,1.23,tokens/s/W,reported,"EdgeLLM [1], Table V (PDF p. 12)",reported source comparison,Power scope differs from complete server power
+PCIe co-design,CPU only,TinyStories-15M,prompt_throughput,33.29,tokens/s,reported,"Chang [4], Table III (PDF p. 4)",32 prompt / 88 decode,"CPU-only baseline, not a GPU"
+PCIe co-design,CPU only,TinyStories-15M,decode_throughput,10.9,tokens/s,reported,"Chang [4], Table III (PDF p. 4)",32 prompt / 88 decode,"CPU-only baseline, not a GPU"
+PCIe co-design,FPGA HW-1,TinyStories-15M,prompt_throughput,71.58,tokens/s,reported,"Chang [4], Table III (PDF p. 4)",32 prompt / 88 decode,"CPU-only baseline, not a GPU"
+PCIe co-design,FPGA HW-1,TinyStories-15M,decode_throughput,3.64,tokens/s,reported,"Chang [4], Table III (PDF p. 4)",32 prompt / 88 decode,"CPU-only baseline, not a GPU"
+PCIe co-design,FPGA HW-2,TinyStories-15M,prompt_throughput,124,tokens/s,reported,"Chang [4], Table III (PDF p. 4)",32 prompt / 88 decode,"CPU-only baseline, not a GPU"
+PCIe co-design,FPGA HW-2,TinyStories-15M,decode_throughput,5.15,tokens/s,reported,"Chang [4], Table III (PDF p. 4)",32 prompt / 88 decode,"CPU-only baseline, not a GPU"
+EdgeLLM,HBM config,GLM-6B,decode_throughput,51.42,tokens/s,reported,"EdgeLLM [1], Table III (PDF p. 12)",128-token evaluation,Memory-system configuration differs
+EdgeLLM,DDR config,GLM-6B,decode_throughput,14.11,tokens/s,reported,"EdgeLLM [1], Table III (PDF p. 12)",128-token evaluation,Memory-system configuration differs
